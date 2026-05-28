@@ -1,0 +1,14 @@
+assemble.model = @UAMFST()
+UAMFST.backbone = @BiomedClipBackbone()
+BiomedClipBackbone.weights = "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224"
+BiomedClipBackbone.vision_dim = 768
+BiomedClipBackbone.text_dim = 768
+
+UAMFST.num_classes = 2
+UAMFST.sngp_hidden = 512
+UAMFST.sngp_proj = 256
+UAMFST.sngp_features = 1024
+UAMFST.dirichlet_hidden = 128
+UAMFST.adapter_rank = 16
+UAMFST.dropout = 0.1
+UAMFST.mc_passes = 10

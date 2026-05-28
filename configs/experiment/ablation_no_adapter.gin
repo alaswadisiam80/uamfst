@@ -1,0 +1,4 @@
+include 'configs/experiment/main.gin'
+
+UAMFST.use_adapter = False
+assemble.output_dir = "runs/ablation_no_adapter"

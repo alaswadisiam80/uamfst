@@ -1,0 +1,28 @@
+# for unit-test smoke only; do not use for reporting
+include 'configs/model/analytic.gin'
+include 'configs/data/synthetic.gin'
+include 'configs/train/schedule.gin'
+
+AnalyticBackbone.vision_dim = 64
+AnalyticBackbone.text_dim = 128
+AnalyticBackbone.image_size = 32
+AnalyticBackbone.dct_block = 8
+AnalyticBackbone.text_hashes = 256
+
+UAMFST.sngp_hidden = 64
+UAMFST.sngp_proj = 32
+UAMFST.sngp_features = 128
+UAMFST.dirichlet_hidden = 32
+UAMFST.mc_passes = 2
+
+SyntheticCohort.train_size = 16
+SyntheticCohort.eval_size = 8
+SyntheticCohort.text_length = 12
+
+RunConfig.epochs = 1
+RunConfig.batch_size = 8
+RunConfig.warmup_epochs = 0
+
+assemble.eval_passes = 2
+assemble.train_passes = 2
+assemble.output_dir = "runs/smoke"

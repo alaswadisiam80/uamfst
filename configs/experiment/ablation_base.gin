@@ -1,0 +1,7 @@
+include 'configs/experiment/main.gin'
+
+UAMFST.use_uncertainty = False
+UAMFST.use_fusion = False
+UAMFST.use_adapter = False
+CompositeObjective.calibration_weight = 0.0
+assemble.output_dir = "runs/ablation_base"

@@ -1,0 +1,27 @@
+assemble.objective = @CompositeObjective()
+CompositeObjective.calibration_weight = 0.1
+CompositeObjective.dirichlet_weight = 0.01
+CompositeObjective.num_bins = 15
+
+assemble.run = @RunConfig()
+RunConfig.seed = 42
+RunConfig.epochs = 50
+RunConfig.batch_size = 16
+RunConfig.grad_accum = 1
+RunConfig.learning_rate = 2e-5
+RunConfig.weight_decay = 1e-2
+RunConfig.warmup_epochs = 5
+RunConfig.precision = "bf16"
+RunConfig.world_size = 1
+
+assemble.conformal = @SplitConformal()
+SplitConformal.alpha = 0.10
+SplitConformal.uncertainty_weight = 0.5
+
+assemble.deferral = @DualCriterionDeferral()
+DualCriterionDeferral.set_size_limit = 1
+DualCriterionDeferral.epistemic_percentile = 85.0
+
+assemble.eval_passes = 10
+assemble.train_passes = 2
+assemble.output_dir = "runs/uamfst"

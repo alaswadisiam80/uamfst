@@ -1,0 +1,5 @@
+include 'configs/model/llava_med.gin'
+include 'configs/data/oai.gin'
+include 'configs/train/schedule.gin'
+
+assemble.output_dir = "runs/oai_transfer"

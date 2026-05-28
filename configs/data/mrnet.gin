@@ -1,0 +1,5 @@
+assemble.data = @MRNetDataset()
+MRNetDataset.root = "data/mrnet"
+MRNetDataset.task = "abnormal"
+MRNetDataset.slices_per_orientation = 3
+MRNetDataset.image_size = 224

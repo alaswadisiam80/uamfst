@@ -1,0 +1,4 @@
+assemble.data = @VQADataset()
+VQADataset.root = "data/vqa_rad"
+VQADataset.name = "vqa-rad"
+VQADataset.image_size = 224

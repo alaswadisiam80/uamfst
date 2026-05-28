@@ -1,0 +1,5 @@
+include 'configs/model/biomedclip.gin'
+include 'configs/data/mrnet.gin'
+include 'configs/train/schedule.gin'
+
+assemble.output_dir = "runs/mrnet_biomedclip"

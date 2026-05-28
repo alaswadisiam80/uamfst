@@ -1,0 +1,9 @@
+assemble.data = @SyntheticCohort()
+SyntheticCohort.num_classes = 2
+SyntheticCohort.image_size = 32
+SyntheticCohort.slices_per_orientation = 1
+SyntheticCohort.vocab_size = 1024
+SyntheticCohort.text_length = 16
+SyntheticCohort.train_size = 64
+SyntheticCohort.eval_size = 32
+SyntheticCohort.seed = 7

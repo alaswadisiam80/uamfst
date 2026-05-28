@@ -1,0 +1,3 @@
+assemble.data = @MuraDataset()
+MuraDataset.root = "data/mura"
+MuraDataset.image_size = 224

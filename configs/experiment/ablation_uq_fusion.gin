@@ -1,0 +1,6 @@
+include 'configs/experiment/main.gin'
+
+UAMFST.use_uncertainty = False
+UAMFST.use_fusion = False
+CompositeObjective.calibration_weight = 0.0
+assemble.output_dir = "runs/ablation_uq_fusion"

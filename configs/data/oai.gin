@@ -1,0 +1,5 @@
+assemble.data = @OAIDataset()
+OAIDataset.root = "data/oai"
+OAIDataset.grade_threshold = 2
+OAIDataset.slices_per_orientation = 3
+OAIDataset.image_size = 224
